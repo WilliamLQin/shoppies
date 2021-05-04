@@ -106,7 +106,7 @@ function App() {
               </form>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper className="paper">
               <div className="section-header">
                 Results for "{searchTitleValue}" {searchYearValue && `(${searchYearValue})`}
@@ -114,7 +114,7 @@ function App() {
               <ResultsList results={searchResults} nominated={nominatedMovies} onNominate={onNominate}/>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper className="paper">
               <div className="section-header">
                 Nominations {nominatedMovies.length >= NOMINATIONS_REQUIRED ? "(Complete)" : `(${NOMINATIONS_REQUIRED - nominatedMovies.length} more to go)`}

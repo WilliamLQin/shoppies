@@ -1,8 +1,6 @@
 .App {
   background-color: #eeeeee;
   color: #616161;
-  min-height: 100vh;
-  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,8 +29,16 @@
 
 .search {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 6px;
+}
+
+@media screen and (min-width: 600px) {
+  .search {
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+  }
 }
 
 .search > form {
