@@ -10,7 +10,7 @@
 }
 
 .App-content {
-  max-width: 800px;
+  max-width: 900px;
   width: calc(100% - 24px);
   padding: 12px;
 }
