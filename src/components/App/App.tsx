@@ -54,7 +54,7 @@ function App() {
 
   useEffect(() => {
     // API keys aren't secure on client so we can just hardcode it here
-    axios.get(`http://www.omdbapi.com/?apikey=a5edf84d&type=movie&s=${searchTitleValue}${searchYearValue && `&y=${searchYearValue}`}`)
+    axios.get(`https://www.omdbapi.com/?apikey=a5edf84d&type=movie&s=${searchTitleValue}${searchYearValue && `&y=${searchYearValue}`}`)
         .then(response => {
           if (response.data.Error) {
             console.log(response.data.Error);
